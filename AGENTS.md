@@ -18,6 +18,15 @@ Only `docs/chatgpt_review/LATEST.md` is current; older milestone handoffs are hi
 - Claims: VERIFIED_BY_CODE, VERIFIED_BY_TEST, VERIFIED_BY_RUNTIME_OR_PRODUCTION, CARRIED_FORWARD, EVENT_PENDING, UNSUPPORTED. Historical evidence is not a fresh run.
 - Blockers: CODE_DEFECT, VALIDATION_TOOL_DEFECT, ENVIRONMENT_DEFECT, EXTERNAL_WAIT, HUMAN_AUTHORIZATION, EVIDENCE_INSUFFICIENT. Complete only when the original acceptance criteria are evidenced; otherwise PARTIAL/BLOCKED with one resumption condition, no unsolicited polling.
 
+## Model routing
+
+- Use `LOWEST_CAPABLE_MODEL_FIRST`, `SINGLE_AGENT_FIRST`, `READ_BEFORE_WRITE`, `ISSUE_SCOPED_EXECUTION`, `EVIDENCE_BEFORE_CLAIM`, `NO_DUPLICATE_REPORTING` and `NO_REDO_OF_VERIFIED_WORK`.
+- Luna Medium is the default implementer for clear CLI, Action, test and documentation work. Luna High is reserved for difficult implementation/debugging, concurrency, migrations, state corruption or difficult CI/provider integration.
+- Terra Medium is read-heavy/read-only first for repository exploration, regression, dependency, security, test-gap and evidence review; return exact files, symbols, dependencies, risks and recommended scope without bulk copies.
+- Sol Medium handles unclear boundaries/dependencies/acceptance, multi-module planning, authoritative-state reconstruction and release planning. Sol High is reserved for proof Gate PASS/FAIL, architecture, security/permission boundaries, irreversible migration, high-risk release or milestone closure.
+- GPT-6 Astra Medium is only for major cross-system architecture or project-critical rescue. Astra High/XHigh are emergency only; Luna MAX is exception only.
+- Do not mechanically escalate. After two failed attempts on one hypothesis, change hypothesis, investigate read-only or escalate. Default to one agent; use at most three active subagents only for genuinely independent work with non-overlapping ownership.
+
 ## Commands and limitations
 
 Product scripts are defined in package.json (npm test, npm run build, npm run check). For governance-only changes use the existing PowerShell proof gate: `& ./done-gate.ps1 'capture' '--label' 'governance' '--' 'git' 'diff' '--check'`. Quote the separator in PowerShell. Preserve receipt requirements and use its matching claim marker.
