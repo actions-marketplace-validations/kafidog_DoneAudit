@@ -1,3 +1,109 @@
+# Current checkpoint — Reddit outreach
+
+- CURRENT_GOAL: One authorized root comment in r/ChatGPTCoding weekly promotion thread; no product changes.
+- CURRENT_BRANCH: main; CURRENT_HEAD: resolve live Git. Input HEAD f1a552024a34d67df7089026bc4abb3e747d3b9f.
+- LAST_VERIFIED_STATE: VERIFIED_BY_RUNTIME_OR_PRODUCTION: Reddit displayed successful comment submission and authenticated permalink readback with complete content and both correct links. Anonymous public visibility confirmed by the user in this conversation; user reports complete body, GitHub/Marketplace links and install command visible while signed out.
+- COMPLETED: exactly one submit under existing u/kafidog; no new account, no additional promotion.
+- ACTIVE_WORK: NONE; DONEAUDIT_REDDIT_OUTREACH_POSTED. OUTREACH_REDDIT=PASS.
+- KNOWN_BLOCKERS: EXTERNAL_WAIT for genuine third-party feedback/adoption; no remaining outreach blocker.
+- LOCKED_DECISIONS: Do not submit again. No product code, release, npm publication, product tests, extra platform or monitor.
+- EVENT_PENDING: genuine third-party feedback/adoption or explicit new user authorization. No monitoring or polling.
+- UNVERIFIED: genuine third-party adoption; no pending moderation/removal notice observed. Independent automated anonymous readback remains unavailable, but user-performed public acceptance is explicitly confirmed.
+- NEXT_EXECUTABLE_ISSUE: NONE; authorized single Reddit outreach complete.
+- NEXT_SINGLE_ACTION: wait for genuinely new third-party evidence or explicit authorization; stop this turn.
+
+## Authorization change
+- OLD_BASELINE: external adoption/marketing wait; intervening portable integration evidence below remains historical.
+- NEW_EVIDENCE: user explicitly authorized one minimum Reddit outreach; live GitHub query still shows Stars 0 and Issue/PR 0, adoption evidence not obtained.
+- SUPERSEDED_DECISION: marketing stop lifted only for this one Reddit submission. Product freeze remains.
+
+## Reddit evidence
+- Subreddit: https://www.reddit.com/r/ChatGPTCoding/
+- Current pinned thread: https://www.reddit.com/r/ChatGPTCoding/comments/1w9lsay/weekly_self_promotion_thread/
+- Rule 5 routes promotional projects including FOSS into weekly thread; rule 7 prohibits low-value raw AI walls of text. Pinned AutoModerator thread expressly permits AI coding projects and requests problem, tools, audience, feedback and affiliation.
+- Subreddit search DoneAudit and kafidog/DoneAudit returned no identifiable duplicate; thread search DoneAudit explicitly returned no results; no kafidog comment found before posting.
+- Comment: https://www.reddit.com/r/ChatGPTCoding/comments/1w9lsay/comment/p8rgf4q/
+- Account: u/kafidog (existing Chrome login).
+- Publication: 2026-09-09 approximately 23:21–23:22 UTC+8 based on local clock and displayed 1 minute ago; exact timestamp not obtained.
+- Used user-provided text, normalizing Markdown fence/paragraph formatting only.
+- Submit clicked once; success toast, comment ID p8rgf4q, correct author/body/GitHub/Marketplace links observed. No removal or moderation warning observed.
+- Public verification: web fetch timed out; anonymous in-app browser reached Reddit CAPTCHA. This is a security verification blocker, not evidence of removal.
+- Follow-up acceptance: user explicitly confirmed complete signed-out visibility. Agent refreshed the original authenticated permalink and confirmed body/install/links still present, no removal notice. The separate in-app session still shows CAPTCHA; this does not contradict visibility in the user-tested session. Do not recreate the comment.
+
+## Live external snapshot (2026-09-09 23:22 UTC+8)
+- DoneAudit Stars: 0.
+- DoneAudit Issue / PR: 0 / 0 (all-state API empty).
+- Awesome Codex CLI PR #246: OPEN; comments 0; reviews 0.
+- Genuine third-party adoption: not obtained. Own Reddit comment does not count.
+- npm downloads and other external replies: not fetched this round; do not estimate.
+
+## Closure review
+- OLD_BASELINE: anonymous readback blocked pending human verification.
+- NEW_EVIDENCE: user explicitly completed signed-out public visibility acceptance; existing authenticated permalink refreshed successfully.
+- SUPERSEDED_DECISION: human verification blocker cleared by user-provided runtime evidence, not by bypassing CAPTCHA.
+- Final reviewer: primary agent checked destination, one-submit history, account, body/links, public user acceptance, and frozen product scope.
+- Current GitHub recheck: Stars 0, all-state Issue/PR 0/0, PR #246 OPEN with comments/reviews 0/0.
+- Only LATEST.md updated; existing governance-only DoneAudit commands validate documentation scope, not product or Reddit visibility.
+
+## Scope and preservation
+Only this handoff changed this round. No product checks or features. Prior proof/portable release distinctions below are CARRIED_FORWARD, not fresh product acceptance.
+
+## Historical checkpoints (not active instructions)
+
+# Current DoneAudit integration checkpoint
+
+- CURRENT_GOAL: resume existing persistent context and integrate the single DoneAudit engine; governance-only.
+- CURRENT_BRANCH: resolve `git branch --show-current`; CURRENT_HEAD: resolve `git rev-parse HEAD`. Integration input: `2900f2dec4c8f6905412e23e8947b45eb1071bd2`.
+- LAST_VERIFIED_STATE: central source `2900f2dec4c8f6905412e23e8947b45eb1071bd2` passed five Node regression cases, build/check syntax, 134 local Git Bash/upstream checks, and all three GitHub workflows (test, Action self-test, DoneAudit release gate). The later self-integration delta is governance-only; fresh source-bound proof is `.doneaudit/evidence/result.json`.
+- COMPLETED: previous governance commit retained; installer/configuration wired to source pin `2900f2dec4c8f6905412e23e8947b45eb1071bd2` (unreleased source, not npm 0.1.0).
+- ACTIVE_WORK: governance integration only; no unrelated product flow is being executed.
+- LOCKED_DECISIONS: No new features, release, marketing submission, full test rerun or automated monitor merely to fill external wait. DoneAudit governance scope never replaces product acceptance or the final reviewer.
+- KNOWN_BLOCKERS: No local implementation blocker recorded. Central regression evidence and GitHub CI must be reviewed separately from this governance-only gate.
+- EVENT_PENDING: New portable source is not npm/Marketplace released; historical adoption wait remains separate. Central portable source is not a published npm/Marketplace release.
+- UNVERIFIED: npm/Marketplace publication of portable features and genuine external adoption. CI source validation is complete for `2900f2d`, not a new release claim. Other products' runtime/Production acceptance was not rerun.
+- NEXT_SINGLE_ACTION: run `node .doneaudit/tool/bin/doneaudit.js run` after any final edit/commit; review exact scope, then safe Git sync. Product resumption remains: Complete this authorized portable integration; do not start marketing or unrelated product features.
+
+`doneaudit.config.json` lists actual reference, pinned-byte and exact-diff allowlist checks, not product test/build substitutes. One installer-owned completion block is in AGENTS.md. CI re-executes the same governance commands with a proof-only Node bootstrap. A later product Issue must select its real product checks and acceptance scope; never reuse this governance-only result as product completion.
+
+Central CI evidence: [release gate](https://github.com/kafidog/DoneAudit/actions/runs/34253983450), [upstream platform tests](https://github.com/kafidog/DoneAudit/actions/runs/34253983423), [Action self-test](https://github.com/kafidog/DoneAudit/actions/runs/34253983435). Source pin remains immutable; consumers do not follow `latest`.
+
+## Carried-forward project truth
+
+
+# Current recovery checkpoint — DoneAudit portable integration
+
+- CURRENT_GOAL: RESUME_AND_INTEGRATE_PERSISTENT_CONTEXT_DONEAUDIT; only the portable integration needed by the portfolio is newly authorized.
+- CURRENT_BRANCH: main; CURRENT_HEAD: resolve `git rev-parse HEAD`; input baseline `6c1dadda8c5413f5065e5bf6d1a89a3de362abfd`.
+- LAST_VERIFIED_STATE: five central Node regression cases passed on Windows; build/check syntax passed. Cross-platform validation and rollout remain in progress; do not infer final acceptance yet.
+- COMPLETED: opt-in portable/no-workflow installation, owned marker merge, vendored hash protection, explicit governance-only scope and matching claims. Existing product missing-category rejection remains.
+- ACTIVE_WORK: verify central source, pin its commit, then rollout only governance files to existing project branches.
+- LOCKED_DECISIONS: one DoneAudit engine, no parallel checker; no fake npm project; no change to upstream receipts or product acceptance. Governance-only VERIFIED is not product COMPLETE.
+- KNOWN_BLOCKERS: none asserted for local implementation; remote CI/release evidence still required before corresponding claims.
+- EVENT_PENDING: source changes are unreleased; npm remains 0.1.0, Marketplace/Action v0.1.1 remains `866a945a949cc3ce8700ef3338a9fba54f5bd40e`. Do not publish or claim a new release from source sync.
+- UNVERIFIED: actual full portfolio rollout, independent Unix CI, release publication and new third-party adoption.
+- NEXT_SINGLE_ACTION: complete the bounded portable rollout and review its scope/source-bound receipts; no marketing or unrelated feature work.
+- OLD_BASELINE: DONEAUDIT_EXTERNAL_WAIT, no product work without a new request.
+- NEW_EVIDENCE: Owner's 2026-09-09 RESUME AND INTEGRATE mission explicitly authorizes the minimal common portable gap.
+- SUPERSEDED_DECISION: external-wait stop applies to adoption/marketing only; the newly authorized portable task may execute. Historical release/adoption evidence below remains carried forward, not rerun.
+
+## Previous checkpoint (historical)
+
+- CURRENT_HEAD: resolve `git rev-parse HEAD` at startup; governance baseline `be18d47e10bd2dbb6fad31dedd4a08a53db9943c`. Documentation commits after that baseline do not imply a new product validation.
+- CURRENT_BRANCH: `main`; confirm it with Git, do not silently switch branches.
+- LAST_VERIFIED_STATE: DONEAUDIT_EXTERNAL_WAIT.
+- COMPLETED / VERIFIED: CARRIED_FORWARD: v0.1.1 release source 866a945a949cc3ce8700ef3338a9fba54f5bd40e, npm 0.1.0 and Marketplace status from the existing handoff; not republished or revalidated here.
+- ACTIVE_WORK: governance-only context adoption; no product execution authorized by this checkpoint.
+- KNOWN_BLOCKERS: EXTERNAL_WAIT: maintainer response or genuine third-party adoption evidence. HUMAN_AUTHORIZATION blocker: none recorded.
+- LOCKED_DECISIONS: No new features, release, marketing submission, full test rerun or automated monitor merely to fill external wait.
+- EVENT_PENDING: EVENT_PENDING: awesome-codex-cli PR #246 response or independently verifiable third-party signal. Counts/status below are 2026-09-08 snapshots, not a current live poll.
+- NEXT_EXECUTABLE_ISSUE: NONE_EXECUTABLE until a listed external event. PR #246 is upstream review, not permission for a new local feature.
+
+Evidence/source references: `README.md`, `CONTRIBUTING.md`, `docs/markers.md` (paths relative to repository root). Preserve accepted evidence unless new evidence or explicit requirements invalidate it; record OLD_BASELINE / NEW_EVIDENCE / SUPERSEDED_DECISION when reopening. A fresh agent must read current Git state and the selected Issue, not infer completion from this summary.
+
+## Carried-forward evidence and prior checkpoint
+
+The following product evidence is retained, not rerun in this governance task. Earlier “this round/current Git/sync” wording describes its original checkpoint; the recovery header above selects the current branch and scope.
+
 # DoneAudit — latest handoff
 
 ## 本輪唯一目標
